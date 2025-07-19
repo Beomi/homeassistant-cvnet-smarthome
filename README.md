@@ -1,4 +1,6 @@
 # Homeassistant Integration for CVnet
+[English](README.md) | [한국어](README_KO.md)
+
 This is a Home Assistant integration for CVnet. It is designed to work with CVnet SmartHome application.
 
 ## Description
@@ -6,6 +8,7 @@ You can connect the devices of [CVnet SmartHome application](https://play.google
 
 ### Integration
 You must register the account in the CVnet SmartHome application first. And then, you should enter your account information to the form during setting up integration entry.
+
 ![image](https://github.com/user-attachments/assets/36a23794-0720-42e7-b459-73a16a4f8dee)
 
 
@@ -16,6 +19,7 @@ You can easily install with below link.
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=nnnlog&repository=homeassistant-cvnet-smarthome&category=integration)
 
 Or, you can find the integration with `cvnet` keyword in HACS store.
+
 ![image](https://github.com/user-attachments/assets/909a7614-b988-4e6c-8e9c-0ec073136871)
 
 
