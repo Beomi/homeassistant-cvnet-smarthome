@@ -54,12 +54,13 @@ class LightClient(CvnetWebsocketClient):
 
         return {
             f"light_{body['number']}_{body['zone']}": {
-                "name": name,
-                "use_default_name": use_default_name,
                 "info": DeviceInfo(
                     identifiers={(self.config.unique_id, f"light:{name}")},
                     manufacturer="CVnet",
                     translation_key="light",
+                    translation_placeholders={
+                        "name": name,
+                    },
                 ),
                 "light": {
                     "set_state_function": functools.partial(lambda _body, state : self.set_state(int(_body["number"]), int(_body["zone"]), state), body),

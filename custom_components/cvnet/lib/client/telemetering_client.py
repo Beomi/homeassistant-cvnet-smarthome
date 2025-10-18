@@ -18,10 +18,6 @@ class TelemeteringClient(CvnetBaseClient):
         data = await self.get_telemetering_data()
         return {
             "telemetering_electricity": {
-                # "type": SensorDeviceClass.ENERGY,
-                # "name": "Electricity Consumption",
-                "name": "",
-                "use_default_name": True,
                 "info": DeviceInfo(
                     identifiers={(self.config.unique_id, "telemetering")},
                     entry_type=DeviceEntryType.SERVICE,
@@ -33,10 +29,6 @@ class TelemeteringClient(CvnetBaseClient):
                 },
             },
             "telemetering_gas": {
-                # "type": SensorDeviceClass.GAS,
-                # "name": "Gas Consumption",
-                "name": "",
-                "use_default_name": True,
                 "info": DeviceInfo(
                     identifiers={(self.config.unique_id, "telemetering")},
                     entry_type=DeviceEntryType.SERVICE,
@@ -48,10 +40,6 @@ class TelemeteringClient(CvnetBaseClient):
                 },
             },
             "telemetering_water": {
-                # "type": SensorDeviceClass.WATER,
-                # "name": "Water Consumption",
-                "name": "",
-                "use_default_name": True,
                 "info": DeviceInfo(
                     identifiers={(self.config.unique_id, "telemetering")},
                     entry_type=DeviceEntryType.SERVICE,

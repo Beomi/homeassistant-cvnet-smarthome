@@ -40,11 +40,17 @@
       },
       "gas": {
         "name": "Gas Consumption"
+      },
+      "ventilator": {
+        "name": "Speed"
+      },
+      "ventilator_pure": {
+        "name": "Speed"
       }
     },
     "climate": {
       "heating": {
-        "name": "Heating {name}",
+        "name": "Heating",
         "state": {
           "heat": "Heat",
           "off": "Off"
@@ -67,7 +73,7 @@
         }
       },
       "ventilator": {
-        "name": "Ventilator {name}",
+        "name": "Ventilator",
         "state": {
           "off": "Off",
           "fan_only": "Ventilation"
@@ -93,7 +99,7 @@
     },
     "fan": {
       "ventilator": {
-        "name": "Ventilator {name}",
+        "name": "Ventilator",
         "state": {
           "off": "Off",
           "on": "On"
@@ -112,7 +118,7 @@
     },
     "light": {
       "light": {
-        "name": "Light {name}",
+        "name": "Light",
         "state": {
           "on": "On",
           "off": "Off"
@@ -121,7 +127,7 @@
     },
     "switch": {
       "outlet": {
-        "name": "Outlet {name}",
+        "name": "Outlet",
         "state": {
           "on": "On",
           "off": "Off"
@@ -131,19 +137,22 @@
   },
   "device": {
     "telemetering": {
-      "name": "Telemetering Device"
+      "name": "Telemetering"
     },
     "ventilator": {
-      "name": "Ventilator Device"
+      "name": "{name} Ventilator"
+    },
+    "ventilator_pure": {
+      "name": "Ventilator"
     },
     "outlet": {
-      "name": "Outlet Device"
+      "name": "{name} Outlet"
     },
     "heating": {
-      "name": "Heating Device"
+      "name": "{name} Heating"
     },
     "light": {
-      "name": "Light Device"
+      "name": "{name} Light"
     }
   }
 }

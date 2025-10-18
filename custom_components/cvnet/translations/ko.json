@@ -40,11 +40,17 @@
       },
       "gas": {
         "name": "가스 소비"
+      },
+      "ventilator": {
+        "name": "속도"
+      },
+      "ventilator_pure": {
+        "name": "속도"
       }
     },
     "climate": {
       "heating": {
-        "name": "난방 {name}",
+        "name": "난방",
         "state": {
           "heat": "난방",
           "off": "꺼짐"
@@ -67,7 +73,7 @@
         }
       },
       "ventilator": {
-        "name": "환기 {name}",
+        "name": "환기",
         "state": {
           "off": "꺼짐",
           "fan_only": "환기"
@@ -93,7 +99,7 @@
     },
     "fan": {
       "ventilator": {
-        "name": "환기 {name}",
+        "name": "환기",
         "state": {
           "off": "꺼짐",
           "on": "켜짐"
@@ -112,7 +118,7 @@
     },
     "light": {
       "light": {
-        "name": "조명 {name}",
+        "name": "조명",
         "state": {
           "on": "켜짐",
           "off": "꺼짐"
@@ -121,7 +127,7 @@
     },
     "switch": {
       "outlet": {
-        "name": "대기전력 {name}",
+        "name": "대기전력",
         "state": {
           "on": "켜짐",
           "off": "꺼짐"
@@ -131,19 +137,22 @@
   },
   "device": {
     "telemetering": {
-      "name": "원격검침 장치"
+      "name": "원격검침"
     },
     "ventilator": {
-      "name": "환기 장치"
+      "name": "{name} 환기"
+    },
+    "ventilator_pure": {
+      "name": "환기"
     },
     "outlet": {
-      "name": "대기전력 장치"
+      "name": "{name} 대기전력"
     },
     "heating": {
-      "name": "난방 장치"
+      "name": "{name} 난방"
     },
     "light": {
-      "name": "조명 장치"
+      "name": "{name} 조명"
     }
   }
 }

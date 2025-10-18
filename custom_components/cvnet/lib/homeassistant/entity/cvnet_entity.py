@@ -25,13 +25,6 @@ class CvnetEntity(CoordinatorEntity[dict[str, Any]]):
 
         data = coordinator.data[coordinator_data_key]
         self._attr_device_info = data["info"]
-        if "name" in data:
-            if "use_default_name" in data and not data["use_default_name"]:
-                self._attr_name = data["name"]
-            else:
-                self._attr_translation_placeholders = {
-                    "name": data["name"],
-                }
 
     @property
     def available(self) -> bool:

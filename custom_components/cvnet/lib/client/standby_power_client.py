@@ -46,12 +46,13 @@ class StandbyPowerClient(CvnetWebsocketClient):
 
             response.update({
                 f"outlet_{power['deviceid']}": {
-                    "name": name,
-                    "use_default_name": use_default_name,
                     "info": DeviceInfo(
                         identifiers={(self.config.unique_id, f"outlet:{name}")},
                         manufacturer="CVnet",
-                        translation_key="outlet"
+                        translation_key="outlet",
+                        translation_placeholders={
+                            "name": name,
+                        },
                     ),
                     "outlet": {
                         "set_state_function": functools.partial(lambda _power, state : self.set_state(int(_power["deviceid"]), state), power),

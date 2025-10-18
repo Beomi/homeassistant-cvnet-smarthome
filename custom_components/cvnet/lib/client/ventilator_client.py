@@ -4,7 +4,6 @@ from typing import Any
 from homeassistant.components.climate import FAN_OFF, FAN_LOW, FAN_MEDIUM, FAN_HIGH
 from homeassistant.helpers.device_registry import DeviceInfo
 
-from ..api.device.light import LightDeviceApi
 from .common.cvnet_websocket_client import CvnetWebsocketClient
 from ..api.device.ventilator import VentilatorDeviceApi
 
@@ -44,15 +43,15 @@ class VentilatorClient(CvnetWebsocketClient):
                     break
 
             fan_mode = [FAN_OFF, FAN_LOW, FAN_MEDIUM, FAN_HIGH][max(0, min(3, int(ventilator["wind_level_mode"])))] if bool(ventilator["running"]) else FAN_OFF
-            # fan_mode = [FAN_OFF, FAN_LOW, FAN_MEDIUM, FAN_HIGH][max(0, min(3, int(ventilator["wind_level_mode"])))]
             response.update({
                 f"ventilator_{ventilator['number']}": {
-                    "name": name,
-                    "use_default_name": use_default_name,
                     "info": DeviceInfo(
                         identifiers={(self.config.unique_id, f"ventilator:{name}")},
                         manufacturer="CVnet",
-                        translation_key="ventilator",
+                        translation_key="ventilator" if name != "환기" and name.lower() != "ventilator" else "ventilator_pure",
+                        translation_placeholders={
+                            "name": name,
+                        },
                     ),
                     "ventilator_climate": {
                         "set_state_function": functools.partial(lambda _ventilator, state, wind_level : self.set_state(int(_ventilator["number"]), state, wind_level), ventilator),

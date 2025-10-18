@@ -48,12 +48,13 @@ class HeatingClient(CvnetWebsocketClient):
 
             response.update({
                 f"heating_{heating['number']}": {
-                    "name": name,
-                    "use_default_name": use_default_name,
                     "info": DeviceInfo(
                         identifiers={(self.config.unique_id, f"heating:{name}")},
                         manufacturer="CVnet",
                         translation_key="heating",
+                        translation_placeholders={
+                            "name": name,
+                        },
                     ),
                     "heating": {
                         "set_state_function": functools.partial(lambda _heating, onoff, target_temp: self.set_state(int(_heating["number"]), onoff, target_temp if target_temp is not None else heating["setting_temp"]), heating),
