@@ -51,7 +51,7 @@ class HeatingClient(CvnetWebsocketClient):
                     "name": name,
                     "use_default_name": use_default_name,
                     "info": DeviceInfo(
-                        identifiers={(self.config.unique_id, f"heating")},
+                        identifiers={(self.config.unique_id, f"heating:{name}")},
                         manufacturer="CVnet",
                         translation_key="heating",
                     ),

@@ -49,7 +49,7 @@ class StandbyPowerClient(CvnetWebsocketClient):
                     "name": name,
                     "use_default_name": use_default_name,
                     "info": DeviceInfo(
-                        identifiers={(self.config.unique_id, f"outlet")},
+                        identifiers={(self.config.unique_id, f"outlet:{name}")},
                         manufacturer="CVnet",
                         translation_key="outlet"
                     ),

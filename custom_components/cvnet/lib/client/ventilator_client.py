@@ -50,7 +50,7 @@ class VentilatorClient(CvnetWebsocketClient):
                     "name": name,
                     "use_default_name": use_default_name,
                     "info": DeviceInfo(
-                        identifiers={(self.config.unique_id, f"ventilator")},
+                        identifiers={(self.config.unique_id, f"ventilator:{name}")},
                         manufacturer="CVnet",
                         translation_key="ventilator",
                     ),

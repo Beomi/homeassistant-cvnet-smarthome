@@ -57,7 +57,7 @@ class LightClient(CvnetWebsocketClient):
                 "name": name,
                 "use_default_name": use_default_name,
                 "info": DeviceInfo(
-                    identifiers={(self.config.unique_id, f"light")},
+                    identifiers={(self.config.unique_id, f"light:{name}")},
                     manufacturer="CVnet",
                     translation_key="light",
                 ),
