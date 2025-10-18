@@ -14,6 +14,7 @@ DESCRIPTIONS = [
         translation_key="ventilator",
         device_class="ventilator",
         has_entity_name=True,
+        name=None,
     ),
 ]
 

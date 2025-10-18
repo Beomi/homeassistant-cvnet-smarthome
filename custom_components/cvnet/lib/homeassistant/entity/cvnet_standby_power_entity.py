@@ -14,7 +14,7 @@ class CvnetStandbyPowerEntity(CvnetEntity, SwitchEntity):
                  coordinator_data_key: str):
         super().__init__(coordinator, entity_description, coordinator_data_key)
 
-        self._attr_has_entity_name = False
+        self._attr_name = None
 
         data = coordinator.data[coordinator_data_key]
         self._set_state_function = data[entity_description.key]["set_state_function"]

@@ -13,6 +13,7 @@ DESCRIPTIONS = [
         translation_key="light",
         device_class="light",
         has_entity_name=True,
+        name=None,
     ),
 ]
 

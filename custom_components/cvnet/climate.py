@@ -25,6 +25,7 @@ DESCRIPTIONS: list[Tuple[ClimateEntityDescription, Type]] = [
             translation_key="heating",
             device_class="heating",
             has_entity_name=True,
+            name=None,
         ), CvnetHeatingEntity
     ),
 ]

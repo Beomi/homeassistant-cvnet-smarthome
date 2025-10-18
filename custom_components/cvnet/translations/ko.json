@@ -70,29 +70,6 @@
             }
           }
         }
-      },
-      "ventilator": {
-        "state": {
-          "off": "꺼짐",
-          "fan_only": "환기"
-        },
-        "state_attributes": {
-          "fan_mode": {
-            "name": "팬 속도",
-            "state": {
-              "off": "꺼짐",
-              "low": "약풍",
-              "medium": "중풍",
-              "high": "강풍"
-            }
-          },
-          "hvac_action": {
-            "state": {
-              "off": "꺼짐",
-              "fan_only": "환기 중"
-            }
-          }
-        }
       }
     },
     "fan": {

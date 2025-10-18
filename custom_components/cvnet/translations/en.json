@@ -70,29 +70,6 @@
             }
           }
         }
-      },
-      "ventilator": {
-        "state": {
-          "off": "Off",
-          "fan_only": "Ventilation"
-        },
-        "state_attributes": {
-          "fan_mode": {
-            "name": "Fan Speed",
-            "state": {
-              "off": "Off",
-              "low": "Low",
-              "medium": "Medium",
-              "high": "High"
-            }
-          },
-          "hvac_action": {
-            "state": {
-              "off": "Off",
-              "fan_only": "Ventilating"
-            }
-          }
-        }
       }
     },
     "fan": {

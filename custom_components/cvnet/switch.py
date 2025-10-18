@@ -13,6 +13,7 @@ DESCRIPTIONS = [
         translation_key="outlet",
         device_class=SwitchDeviceClass.OUTLET,
         has_entity_name=True,
+        name=None,
     ),
 ]
 
