@@ -6,4 +6,4 @@ DOMAIN = "cvnet"
 CONF_REGION = "region"
 CONF_SITE_NAME = "site_name"
 
-PLATFORMS = [Platform.SENSOR, Platform.LIGHT, Platform.CLIMATE, Platform.FAN, Platform.SWITCH]
+PLATFORMS = [Platform.SENSOR, Platform.LIGHT, Platform.CLIMATE, Platform.FAN, Platform.SWITCH, Platform.IMAGE]

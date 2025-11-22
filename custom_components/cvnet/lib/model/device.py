@@ -6,6 +6,7 @@ class EnabledDevicesRespond(TypedDict):
     """
     Not supported devices will not be included in this type.
     """
+
     isHeating: bool  # 난방
     isLight: bool  # 조명
     # isWholeLight: bool
@@ -23,7 +24,7 @@ class EnabledDevicesRespond(TypedDict):
     isTelemetering: bool  # 원격검침 (전기, 수도, 가스)
     # isEnterCar: bool
     # isParcel: bool
-    # isVisitor: bool
+    isVisitor: bool
     # isEmergency: bool
     # isCctv: bool
     # isEnterRecord: bool

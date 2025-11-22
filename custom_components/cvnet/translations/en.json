@@ -125,6 +125,9 @@
     },
     "light": {
       "name": "{name} Light"
+    },
+    "visitor": {
+      "name": "Visitor Image"
     }
   }
 }
