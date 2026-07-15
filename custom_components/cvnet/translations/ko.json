@@ -31,6 +31,14 @@
     }
   },
   "entity": {
+    "button": {
+      "elevator_up": {
+        "name": "위쪽 호출"
+      },
+      "elevator_down": {
+        "name": "아래쪽 호출"
+      }
+    },
     "sensor": {
       "electricity": {
         "name": "전력 소비"
@@ -108,6 +116,9 @@
     }
   },
   "device": {
+    "elevator": {
+      "name": "엘리베이터"
+    },
     "telemetering": {
       "name": "원격검침"
     },

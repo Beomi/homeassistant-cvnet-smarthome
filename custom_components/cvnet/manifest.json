@@ -2,14 +2,14 @@
   "domain": "cvnet",
   "name": "CVnet SmartHome",
   "codeowners": [
-    "@nnnlog"
+    "@Beomi"
   ],
   "config_flow": true,
   "dependencies": [],
-  "documentation": "https://github.com/nnnlog/homeassistant-cvnet-smarthome",
+  "documentation": "https://github.com/Beomi/homeassistant-cvnet-smarthome",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/nnnlog/homeassistant-cvnet-smarthome/issues",
+  "issue_tracker": "https://github.com/Beomi/homeassistant-cvnet-smarthome/issues",
   "quality_scale": "bronze",
   "requirements": [],
-  "version": "0.0.1"
+  "version": "0.1.0"
 }

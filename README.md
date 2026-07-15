@@ -22,9 +22,9 @@ You must register the account in the CVnet SmartHome application first. And then
 
 You can easily install with below link.
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=nnnlog&repository=homeassistant-cvnet-smarthome&category=integration)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Beomi&repository=homeassistant-cvnet-smarthome&category=integration)
 
-Or, you can find the integration with `cvnet` keyword in HACS store.
+If needed, add `https://github.com/Beomi/homeassistant-cvnet-smarthome` as a HACS custom repository with the `Integration` category.
 
 ![image](https://github.com/user-attachments/assets/909a7614-b988-4e6c-8e9c-0ec073136871)
 
@@ -40,6 +40,7 @@ Copy contents of `custom_components/cvnet/` to your Home Assistant `custom_compo
 - Standby Power (Power Outlet)
 - Telemetering (Energy, Water, Gas)
 - Visitor photos (image)
+- Elevator call (up/down buttons)
 
 ## Screenshots
 
@@ -52,4 +53,3 @@ Copy contents of `custom_components/cvnet/` to your Home Assistant `custom_compo
 - Guard (Security) mode : in-room, out-room, sleep (Select entity)
 - All light control : This feature may provide to control all lights in the home including what aren't supported to be control each its on/off. (Binary switch)
 - Gas control : Only supported turn off for safety (Binary switch [only turn off])
-- Elevator (button)

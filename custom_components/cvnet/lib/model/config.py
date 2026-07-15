@@ -2,6 +2,8 @@ import asyncio
 
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator
 
+from .device import EnabledDevicesRespond
+
 
 class CvnetConfig:
     host: str
@@ -20,5 +22,8 @@ class CvnetConfig:
 
 class CvnetConfigEntryRuntimeData:
     config: CvnetConfig
-    coordinators: list[DataUpdateCoordinator] = []
-    listener_tasks: list[asyncio.Task] = []
+    enabled_devices: EnabledDevicesRespond
+
+    def __init__(self) -> None:
+        self.coordinators: list[DataUpdateCoordinator] = []
+        self.listener_tasks: list[asyncio.Task] = []

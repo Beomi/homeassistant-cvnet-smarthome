@@ -36,13 +36,16 @@ class DeviceApi:
         if data["result"] != 1:
             raise UnknownException("API call failed: Unknown error")
 
+        menu = data["CV"]["mainmenu_mobile_info"]
+
         return EnabledDevicesRespond(
-            isHeating=data["CV"]["mainmenu_mobile_info"]["isHeating"] == "1",
-            isLight=data["CV"]["mainmenu_mobile_info"]["isLight"] == "1",
-            isVentilator=data["CV"]["mainmenu_mobile_info"]["isVentilator"] == "1",
-            isTelemetering=data["CV"]["mainmenu_mobile_info"]["isTelemetering"] == "1",
-            isConcent=data["CV"]["mainmenu_mobile_info"]["isConcent"] == "1",
-            isVisitor=data["CV"]["mainmenu_mobile_info"]["isVisitor"] == "1",
+            isHeating=menu["isHeating"] == "1",
+            isLight=menu["isLight"] == "1",
+            isVentilator=menu["isVentilator"] == "1",
+            isElevator=menu.get("isElevator") == "1",
+            isTelemetering=menu["isTelemetering"] == "1",
+            isConcent=menu["isConcent"] == "1",
+            isVisitor=menu["isVisitor"] == "1",
         )
 
     @staticmethod

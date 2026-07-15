@@ -10,7 +10,6 @@ from homeassistant.const import (
     CONF_HOST,
     CONF_USERNAME,
     CONF_PASSWORD,
-    EVENT_HOMEASSISTANT_START,
     EVENT_HOMEASSISTANT_STARTED,
 )
 from homeassistant.core import HomeAssistant, CoreState
@@ -58,6 +57,7 @@ async def get_coordinators(
     await AuthenticationApi.login(session, config)
 
     enabled_devices = await DeviceApi.get_enabled_devices(session, config)
+    entry.runtime_data.enabled_devices = enabled_devices
 
     mapping: dict[str, Callable[[str], CvnetDataUpdateCoordinator]] = {
         "isTelemetering": lambda k: TelemeteringDeviceDataUpdateCoordinator(

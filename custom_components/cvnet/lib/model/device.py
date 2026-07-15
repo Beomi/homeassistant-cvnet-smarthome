@@ -14,7 +14,7 @@ class EnabledDevicesRespond(TypedDict):
     isVentilator: bool  # 환기 (전열교환기)
     # isAircon: bool
     # isCurtain: bool
-    # isElevator: bool
+    isElevator: bool  # 엘리베이터 호출
     # isCooktop: bool
     isConcent: bool  # 대기전력 (콘센트)
     # isPhotoAlbum: bool

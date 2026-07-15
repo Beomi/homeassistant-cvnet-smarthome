@@ -25,13 +25,15 @@ class CvnetBaseClient:
         try:
             return await callback()
         except UnauthorizedException:
+            if not retry:
+                raise
             await self.login()
             return await self._request(callback, retry=False)
         except Exception as e:
             if retry:
                 _LOGGER.error(f"Error occurred: {e}. Retrying...")
                 _LOGGER.error(traceback.format_exc())
-                return self._request(callback, retry=False)
+                return await self._request(callback, retry=False)
             else:
                 raise e
 

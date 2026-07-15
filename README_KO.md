@@ -22,9 +22,9 @@ CVnet 홈 어시스턴트 통합은 CVnet SmartHome 애플리케이션을 통해
 
 아래 링크를 통해 쉽게 설치할 수 있습니다.
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=nnnlog&repository=homeassistant-cvnet-smarthome&category=integration)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Beomi&repository=homeassistant-cvnet-smarthome&category=integration)
 
-또는 HACS 스토어에서 `cvnet` 키워드로 통합을 찾을 수 있습니다.
+필요한 경우 `https://github.com/Beomi/homeassistant-cvnet-smarthome`을 HACS 사용자 정의 저장소에 `Integration` 유형으로 추가합니다.
 
 ![image](https://github.com/user-attachments/assets/909a7614-b988-4e6c-8e9c-0ec073136871)
 
@@ -40,6 +40,7 @@ CVnet 홈 어시스턴트 통합은 CVnet SmartHome 애플리케이션을 통해
 - 대기 전력 (전원 콘센트)
 - 원격 검침 (에너지, 물, 가스)
 - 방문자 사진 (이미지)
+- 엘리베이터 호출 (상행/하행 버튼)
 
 ## 스크린샷
 
@@ -52,4 +53,3 @@ CVnet 홈 어시스턴트 통합은 CVnet SmartHome 애플리케이션을 통해
 - 방범 모드 : 재실, 외출, 수면 (Select)
 - 일괄소등 : 이 기능은 개별 제어를 지원하지 않는 조명(예. 화장실)을 포함한 모든 조명을 제어할 수 있습니다. (이진 스위치)
 - 가스 : 안전을 위해 끄는 것만 지원됨 (이진 스위치 [끄는 것만 지원])
-- 엘리베이터 (버튼)
